@@ -108,81 +108,70 @@ API keys are stored securely using environment variables and are not exposed in 
    ```sh
    git clone <your-repo-url>
    cd virtualfit-ai
-Install dependencies:
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Create a `.env.local` file in the project root:
+   ```env
+   GEMINI_API_KEY=your_api_key_here
+   ```
+4. Run the development server:
+   ```sh
+   npm run dev
+   ```
+5. Open:
+   ```
+   http://localhost:3000
+   ```
 
-sh
-Copy code
-npm install
-Create a .env.local file in the project root:
+---
 
-env
-Copy code
-GEMINI_API_KEY=your_api_key_here
-Run the development server:
+## 8. Challenges Faced
+- Retailer websites blocking automated image extraction.
+- API rate limits during testing.
+- Ensuring realistic garment placement.
+- Maintaining image quality during AI processing.
+- Secure management of API credentials.
 
-sh
-Copy code
-npm run dev
-Open:
+---
 
-arduino
-Copy code
-http://localhost:3000
-8. Challenges Faced
-Retailer websites blocking automated image extraction.
+## 9. Applications
+- Online fashion retail platforms
+- E-commerce personalization systems
+- Virtual styling platforms
+- Fashion-tech startups
 
-API rate limits during testing.
+---
 
-Ensuring realistic garment placement.
+## 10. Future Scope
+- Integration of pose detection for better garment alignment.
+- 3D garment simulation for enhanced realism.
+- AR-based real-time try-on via webcam.
+- Personalized outfit recommendations using ML.
+- Size estimation using body landmark detection.
+- Multi-garment layering simulation.
 
-Maintaining image quality during AI processing.
+---
 
-Secure management of API credentials.
-
-9. Applications
-Online fashion retail platforms
-
-E-commerce personalization systems
-
-Virtual styling platforms
-
-Fashion-tech startups
-
-10. Future Scope
-Integration of pose detection for better garment alignment.
-
-3D garment simulation for enhanced realism.
-
-AR-based real-time try-on via webcam.
-
-Personalized outfit recommendations using ML.
-
-Size estimation using body landmark detection.
-
-Multi-garment layering simulation.
-
-11. Learning Outcomes
+## 11. Learning Outcomes
 Through this project, the following concepts were explored:
+- API integration in frontend systems
+- Generative AI deployment
+- Image processing workflows
+- Web application architecture
+- Secure credential management
+- Real-world AI problem solving
 
-API integration in frontend systems
+---
 
-Generative AI deployment
-
-Image processing workflows
-
-Web application architecture
-
-Secure credential management
-
-Real-world AI problem solving
-
-12. License
+## 12. License
 This project is developed strictly for academic purposes under PBL-2 at Manipal University Jaipur. Commercial deployment would require appropriate licensing for AI APIs and retailer content.
 
-13. Acknowledgements
-    
-Dr. Arpita Baronia - PBL-2 Guide
+---
 
-Google Gemini AI
-
-Modern AI and web development frameworks
+## 13. Acknowledgements
+- Dr. Arpita Baronia - PBL-2 Guide
+- Google Gemini AI
+- Modern AI and web development frameworks
