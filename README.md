@@ -1,93 +1,188 @@
+# VirtualFit AI  
+### Project-Based Learning (PBL-2)  
+### Manipal University Jaipur  
 
-# VirtualFit AI
-
-VirtualFit AI is a high-end virtual try-on web application that uses Google Gemini AI to realistically render garments on user-uploaded photos. Instantly visualize how you would look in clothing from Amazon, Zara, and other retailers—all in your browser.
-
----
-
-## Features
-
-- **Virtual Try-On:** Upload your portrait and a garment image or product link to see a realistic try-on result.
-- **AI-Powered:** Utilizes Gemini 2.5 Flash for advanced neural rendering and garment transfer.
-- **Retailer Integration:** Paste product links from Amazon, Zara, H&M, Myntra, and more. The app automatically extracts the product image.
-- **Manual Upload:** If automatic extraction fails (e.g., due to retailer blocking), you can upload a garment image manually.
-- **Comparison Slider:** Compare your original photo and the AI-generated try-on result with an interactive slider.
-- **Download Results:** Save your virtual try-on image for sharing or reference.
+**Name:** Utkarsh Vohra  
+**Registration Number:** 2427030571  
+**Course:** Project-Based Learning – 2 (PBL-2)  
+**Year:** 2026  
 
 ---
 
-## How It Works
+## 1. Introduction
 
-1. **Upload Your Photo:**
-   - Use a clear, front-facing portrait for best results.
-2. **Choose a Garment:**
-   - Paste a product link (Amazon, Zara, etc.) or upload a garment image manually.
-3. **Visualize the Fit:**
-   - Click "Visualize This Fit" to generate your try-on image using Gemini AI.
-4. **Compare & Download:**
-   - Use the slider to compare before/after, and download your result.
+VirtualFit AI is an AI-powered virtual try-on web application that enables users to realistically visualize garments on their own uploaded photographs. The system integrates generative artificial intelligence to render clothing items onto a user’s image, simulating how the garment would appear when worn.
+
+The project demonstrates the practical integration of Artificial Intelligence APIs with modern frontend technologies to solve a real-world problem in the e-commerce industry.
 
 ---
 
-## Technologies Used
+## 2. Problem Statement
 
-- **React**: Frontend UI
-- **Vite**: Fast development/build tooling
-- **TypeScript**: Type safety
-- **@google/genai**: Gemini AI API client
-- **Tailwind CSS**: Modern styling
+Online fashion retail faces a significant challenge: customers cannot accurately visualize how a garment will look on their own body type before purchasing. This results in:
+
+- High product return rates  
+- Customer dissatisfaction  
+- Increased logistics costs  
+- Reduced purchase confidence  
+
+The goal of this project is to design and implement an AI-based virtual try-on system that enhances user confidence and reduces uncertainty in online shopping.
 
 ---
 
-## Setup & Running Locally
+## 3. Objectives
 
-**Prerequisites:**
+- Develop a responsive web-based application for virtual try-on.
+- Integrate generative AI for realistic garment transfer.
+- Enable garment input via product URL or manual image upload.
+- Provide an interactive before/after comparison interface.
+- Explore real-world AI deployment in frontend systems.
+- Ensure secure handling of API credentials.
+
+---
+
+## 4. System Overview
+
+VirtualFit AI allows users to:
+
+1. Upload a clear front-facing portrait.
+2. Provide a garment image or a retailer product link.
+3. Automatically extract the product image (where permitted).
+4. Generate a realistic try-on image using AI.
+5. Compare original and generated images via an interactive slider.
+6. Download the generated output.
+
+---
+
+## 5. System Architecture
+
+### Workflow
+
+1. User uploads portrait image.
+2. User inputs garment image or retailer product URL.
+3. Application extracts garment image (if URL provided).
+4. AI model processes:
+   - User image
+   - Garment image
+5. Rendered try-on output is generated.
+6. Frontend displays:
+   - Original image
+   - Generated image
+   - Interactive comparison slider
+   - Download option
+
+### Technology Stack
+
+- **React** – Frontend user interface
+- **Vite** – Development and build tool
+- **TypeScript** – Type-safe development
+- **Gemini 2.5 Flash (Google AI API)** – Generative AI rendering engine
+- **Tailwind CSS** – UI styling and responsiveness
+
+---
+
+## 6. AI Integration
+
+The system integrates Google Gemini’s generative image capabilities to perform garment transfer and neural rendering.
+
+The AI model:
+- Accepts a portrait image and garment image
+- Generates a new composite image
+- Preserves facial identity and body structure
+- Adjusts garment placement realistically
+
+API keys are stored securely using environment variables and are not exposed in the repository.
+
+---
+
+## 7. Setup and Execution
+
+### Prerequisites
+
 - Node.js (v18+ recommended)
-- A Google Gemini API key ([get one here](https://aistudio.google.com/app/apikey))
+- Google Gemini API key
 
-**Steps:**
+### Installation Steps
 
-1. **Clone the repository:**
+1. Clone the repository:
    ```sh
    git clone <your-repo-url>
    cd virtualfit-ai
-   ```
-2. **Install dependencies:**
-   ```sh
-   npm install
-   ```
-3. **Set up your API key:**
-   - Create a `.env.local` file in the project root:
-     ```env
-     GEMINI_API_KEY=your_gemini_api_key_here
-     ```
-4. **Run the app:**
-   ```sh
-   npm run dev
-   ```
-   The app will be available at [http://localhost:3000](http://localhost:3000).
+Install dependencies:
 
----
+sh
+Copy code
+npm install
+Create a .env.local file in the project root:
 
-## Troubleshooting
+env
+Copy code
+GEMINI_API_KEY=your_api_key_here
+Run the development server:
 
-- **API Key Issues:**
-  - Make sure your `.env.local` file uses `GEMINI_API_KEY` (not `API_KEY`).
-  - If you see "Too many requests", you may have hit the Gemini API rate limit. Wait a few minutes or try a different network/account.
-- **Retailer Blocking:**
-  - Some retailers (especially Amazon) may block automated image extraction. Use manual upload if this happens.
-- **Image Quality:**
-  - For best results, use clear, well-lit, front-facing photos.
+sh
+Copy code
+npm run dev
+Open:
 
----
+arduino
+Copy code
+http://localhost:3000
+8. Challenges Faced
+Retailer websites blocking automated image extraction.
 
-## License
+API rate limits during testing.
 
-This project is for educational and demonstration purposes only. Commercial use may require additional licensing for the Gemini API and retailer content.
+Ensuring realistic garment placement.
 
----
+Maintaining image quality during AI processing.
 
-## Credits
+Secure management of API credentials.
 
-- Gemini AI by Google
-- UI inspired by modern e-commerce and AI demo apps
+9. Applications
+Online fashion retail platforms
+
+E-commerce personalization systems
+
+Virtual styling platforms
+
+Fashion-tech startups
+
+10. Future Scope
+Integration of pose detection for better garment alignment.
+
+3D garment simulation for enhanced realism.
+
+AR-based real-time try-on via webcam.
+
+Personalized outfit recommendations using ML.
+
+Size estimation using body landmark detection.
+
+Multi-garment layering simulation.
+
+11. Learning Outcomes
+Through this project, the following concepts were explored:
+
+API integration in frontend systems
+
+Generative AI deployment
+
+Image processing workflows
+
+Web application architecture
+
+Secure credential management
+
+Real-world AI problem solving
+
+12. License
+This project is developed strictly for academic purposes under PBL-2 at Manipal University Jaipur. Commercial deployment would require appropriate licensing for AI APIs and retailer content.
+
+13. Acknowledgements
+    
+Dr. Arpita Baronia - PBL-2 Guide
+
+Google Gemini AI
+
+Modern AI and web development frameworks
