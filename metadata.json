@@ -1,0 +1,7 @@
+{
+  "name": "VirtualFit AI",
+  "description": "A high-end virtual try-on application that uses Gemini AI to realistically render garments on user-uploaded photos.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
